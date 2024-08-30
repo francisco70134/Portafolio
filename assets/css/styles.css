@@ -1,0 +1,862 @@
+/*fuentes de letras*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Staatliches&family=Work+Sans:wght@100;200;300;400;500;600;800&display=swap');
+
+/*colores de la web*/
+:root{
+    --colorPrincipal: #A612C7;
+    --colorSecundario: #1e2326;
+    --colorTerceario: #252A2E;
+    --colorBarra: #131517;
+    --colorBlanco: #fff;
+    --colorNegro: #000;
+    --fuenteTitulo: 'Righteous';
+    --fuenteParrafo: 'Work Sans';
+    --colorFondo: #7474743d;
+}
+
+/*siempre colocar esto en los css*/
+html{
+    scroll-behavior: smooth; /*permite deslizar click en los links del menu*/
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4{
+    font-family: var(--fuenteTitulo);
+}
+p{
+    font-family: var(--fuenteParrafo);
+    font-size: 1.3rem;
+}
+
+h1{
+    font-size: 4.5rem;
+    margin: 0;
+}
+h2{
+    font-size: 4rem;
+    margin: 0;
+}
+h3{
+    font-size: 2.6rem;
+}
+h4{
+ font-size: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*dimensiones de imagenes*/
+img {
+    width: 100%;
+}
+
+/*menu*/
+.contenedor-header{
+    background: var(--colorSecundario);
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    align-items: center;
+}
+
+.contenedor-header header{
+    display: flex;
+    max-width: 1100px;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.contenedor-header header .logo a{
+    color: var(--colorPrincipal);
+    font-size: 3.1rem;
+    font-family: var(--fuenteTitulo);
+    
+}
+
+.diferenciaLogo{
+    color: var(--colorBlanco);
+}
+
+.contenedor-header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 3.3rem;
+}
+
+.contenedor-header nav ul li a{
+    color: var(--colorBlanco);  
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: var(--fuenteParrafo);
+    transition: all .3s;
+}
+
+.contenedor-header nav ul li a:hover{
+    color: var(--colorPrincipal);
+}
+
+.nav-responsive{
+    background-color: var(--colorPrincipal);
+    color: var(--colorBlanco);
+    padding: 0.5rem 1rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    display: none;
+}
+
+/*seccion inicio*/
+
+.inicio{
+    background: linear-gradient(to top, rgba(20,25,28,.8), rgba(30,35,38,1)), url(../img/fondo.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: var(--colorBlanco);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.inicio .contenido-banner{
+    padding: 3rem;
+    background-color: var(--colorSecundario);
+    max-width: 350px;
+    margin: 12rem 0 0 ;
+    text-align: center;
+    border-radius: 4rem;
+}
+
+
+.contenedor-imagen img{
+    max-width: 22rem;
+    min-height: 22rem;
+    border-radius: 100%;
+    border: .7rem solid var(--colorPrincipal);
+    margin: auto; 
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.inicio .contenido-banner h2{
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    font-family: var(--fuenteParrafo);
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a{
+    color: var(--colorBlanco);
+    display: inline-block;
+    border: 1px solid var(--colorBlanco);
+    border-radius: 100%;
+    width: 4.2rem;
+    height: 4.2rem;
+    line-height: 4.2rem; /*sirve para centar de algun modo*/
+    margin: 4rem .5rem;
+    font-size: 2rem; /*para agrandar los icos*/
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: var(--colorPrincipal);
+}
+
+.sobremi{
+    background-color: var(--colorSecundario);
+    color: var(--colorBlanco);
+    padding: 5rem 2rem;
+}
+
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sobremi .contenido-seccion h2{
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 5rem;
+}
+
+.sobremi .contenido-seccion p{
+    line-height: 2.2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.sobremi .contenido-seccion p span{
+    font-family: var(--fuenteParrafo);
+    color: var(--colorPrincipal);
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col{
+    width: 50%;
+}
+
+.sobremi .fila .col ul{
+    list-style: none;
+    padding: 0;
+    font-size: 1.8rem;
+    font-family: var(--fuenteParrafo);
+}
+
+.sobremi .fila .col ul li{
+    margin: 1.2rem 0;
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    font-family: var(--fuenteTitulo);
+    color: var(--colorPrincipal);
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span{
+    background-color: var(--colorPrincipal);
+    padding: .5rem ;
+    font-weight: bold;
+    border-radius: .5rem;
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--colorTerceario);
+    border-radius: 1rem;
+    margin: 0 1.5rem 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2.6rem;
+    transition: all .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes span{
+    font-size: 1.4rem;
+    font-family: var(--fuenteParrafo);
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: var(--colorPrincipal);
+}
+
+/*boton*/
+
+.sobremi a{
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--colorBlanco);
+    border: 2px solid var(--colorBlanco);
+    font-size: 1.6rem;
+    padding: 1rem 2.2rem;
+    margin: 3rem auto;
+    width: fit-content;
+    display: block;
+    font-family: var(--fuenteParrafo);
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi a .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--colorPrincipal);
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi a:hover .overlay{
+    width: 100%;
+}
+
+/*Skills CSS*/
+.skills{
+    background-color: var(--colorTerceario);
+    color: var(--colorBlanco);
+    padding: 5rem 2rem;
+}
+
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skills .contenido-seccion h2{
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 5rem;
+}
+
+.skills .contenido-seccion span{
+    padding: .5rem ;
+    font-size: 1.4rem;
+/*     font-weight: bold; */
+    font-family: var(--fuenteParrafo);
+}
+
+.skills .fila{
+    display: flex;
+}
+
+.skills .fila .col{
+    width: 50%;
+    padding: 0 2rem;
+}
+
+.skills .fila .col h3{
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Ajuste para que la sección de herramientas ocupe todo el ancho */
+.full-width {
+    width: 100%;
+}
+
+.contenedor-herramientas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.herramienta {
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--colorTerceario);
+    border-radius: 1rem;
+    margin: 0 1.5rem 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2.6rem;
+    transition: all .3s;
+}
+
+.herramienta span {
+    font-size: 1.4rem;
+    font-family: var(--fuenteParrafo);
+}
+
+.herramienta:hover {
+    background-color: var(--colorPrincipal);
+}
+
+.herramienta i {
+    font-size: 3rem;
+    color: var(--colorBlanco);
+}
+
+/* Ajuste para las barras de skills profesionales al 100% */
+.skill .barra-skill {
+    height: .8rem;
+    width: 100%;
+    background-color: var(--colorBarra);
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.skill .progreso.full {
+    width: 100%;
+    background-color: var(--colorPrincipal);
+    height: .8rem;
+}
+
+
+
+/* ========================================= */
+
+/*Curriculum CSS*/
+.curriculum{
+    background-color: var(--colorSecundario);
+    color: var(--colorBlanco);
+    padding: 5rem 2rem;
+}
+
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.curriculum .contenido-seccion h2{
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 5rem;
+}
+
+.curriculum .fila{
+    display: flex;
+    gap: 2rem;
+}
+
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 2rem;
+}
+
+.curriculum .fila .col h3{
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.curriculum .fila .izquierda{
+    border-right: 3px solid var(--colorTerceario);
+}
+
+.curriculum .fila .derecha{
+    border-left: 3px solid var(--colorTerceario);
+}
+
+.curriculum .fila .item{
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    background-color: var(--colorTerceario);
+    position: relative;
+    
+}
+
+.curriculum .fila .col h4 {
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.curriculum .fila .col span {
+    font-size: 1.4rem;
+    font-family: var(--fuenteParrafo);
+}
+
+.curriculum .fila .item .casa{
+    color: var(--colorPrincipal);
+    font-size: 2.2rem;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item .fecha{
+    color: var(--colorPrincipal);
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.curriculum .fila .item p{
+    line-height: 2.3rem;
+    font-size: 1.4rem;
+}
+
+.curriculum .fila .izq{
+    border-right: 2px solid var(--colorPrincipal);
+    margin-right: 2rem;
+}
+
+.curriculum .fila .der{
+    border-left: 2px solid var(--colorPrincipal);
+    margin-left: 2rem;
+}
+
+.curriculum .fila .item .conectori{
+    height: .2rem;
+    background-color: var(--colorPrincipal);
+    width: 4.7rem;
+    position: absolute;
+    top: 50%;
+    right: -4.7rem;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: var(--colorPrincipal);
+    float: right;
+    position: relative;
+    bottom: .4rem;
+}
+
+.curriculum .fila .item .conectord{
+    height: .2rem;
+    background-color: var(--colorPrincipal);
+    width: 4.7rem;
+    position: absolute;
+    top: 50%;
+    left: -4.7rem;
+    z-index: 5;
+}
+
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: var(--colorPrincipal);
+    float: left;
+    position: relative;
+    bottom: .4rem;
+}
+
+/* SECCION PORTAFOLIO */
+
+.portafolio{
+    background-color: var(--colorTerceario);
+    color: var(--colorBlanco);
+    padding: 5rem 2rem;
+}
+
+.portafolio .contenido-seccion{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.portafolio .contenido-seccion h2{
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 5rem;
+}
+
+.portafolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portafolio .galeria .proyecto{
+    position: relative;
+    max-width: 34rem;
+    height: fit-content;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.portafolio .galeria .progreso img{
+    width: 100%;
+    display: block;
+}
+
+.portafolio .galeria .proyecto .overlay h3{
+    margin-bottom: 0;
+    transition: 1s;
+}
+
+.portafolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(170, 18, 179, 0.8), rgba(166, 18, 199, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 1.7rem;
+    opacity: 0;
+}
+.portafolio .galeria .proyecto .overlay a{
+    color: var(--colorBlanco);
+}
+
+.portafolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+
+.portafolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: -1rem;
+}
+
+/* SECCION DE CONTACTO */
+
+.contacto{
+    background-image: url(..assets/img/contact_bg.png);
+    background-color: var(--colorSecundario);
+    color: var(--colorBlanco);
+    padding: 5rem 0;
+}
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-size: 4.8rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.contacto .fila{
+    display: flex;
+}
+
+.contacto .col{
+    width: 50%;
+    padding: 3rem;
+    position: relative;
+}
+
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 1.8rem;
+    border: none;
+    margin-bottom: 2rem;
+    background-color: var(--colorTerceario);
+    color: var(--colorBlanco);
+    font-size: 1.4rem;
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--colorBlanco);
+    border: 2px solid var(--colorBlanco);
+    font-size: 1.6rem;
+    padding: 1rem 2.2rem;
+    margin: 3rem auto;
+    width: fit-content;
+    display: block;
+    font-family: var(--fuenteParrafo);
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--colorPrincipal);
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+.contacto .col img{
+    width: 100%;
+}
+
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: var(--colorTerceario);
+    padding: 2rem;
+    max-width: 50rem;
+    left: 50%;
+    transform: translate(-50%, -95%);
+}
+
+.contacto .col .info ul{
+    list-style: none;
+    padding-right: 0rem;
+    padding-left: 0;
+
+}
+
+.contacto .col .info ul li{
+    margin-bottom: 2rem;
+    font-family: var(--fuenteParrafo);
+    font-size: 1.4rem;
+}   
+
+.contacto .col .info ul li i{
+    color: var(--colorPrincipal);
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+footer{
+    background-color: var(--colorTerceario);
+    color: var(--colorBlanco);
+    padding: 5rem 0 3rem 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes a{
+    color: var(--colorBlanco);
+    display: inline-block;
+    border: 1px solid var(--colorBlanco);
+    border-radius: 100%;
+    width: 4.2rem;
+    height: 4.2rem;
+    line-height: 4.2rem; /*sirve para centar de algun modo*/
+    margin: 4rem .5rem;
+    font-size: 2rem; /*para agrandar los icos*/
+    transition: .3s;
+}
+
+footer .arriba{
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--colorPrincipal);
+    color: var(--colorBlanco);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -2.5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    font-size: 1.5rem;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1119px) {
+    nav{
+        display: none;
+    }
+
+    .nav-responsive{
+        display: block;
+        font-size: 1.7rem;
+    }
+
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: var(--colorTerceario);
+        width: 180px;
+    }
+
+    nav.responsive ul{
+        display: block !important;
+        padding-left: 0;
+    }
+
+    nav.responsive ul li{
+        border-bottom: 1px solid var(--colorBlanco);
+        padding: 1rem 0;
+    }
+
+    nav.responsive ul li a{
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .sobremi .fila{
+        display: block;
+    }
+
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+
+    .skills .fila .col{
+        width: 90%;
+    }
+
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum{
+        padding: 3rem;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+
+    .curriculum .fila .col{
+        width: 90%;
+    }
+/* 
+    .curriculum .fila .derecha{
+        margin-left: 2rem;
+    } */
+
+    .portafolio .galeria{
+        display: block;
+        width:100%;
+    }
+
+    .portafolio .galeria .proyecto{
+        max-width: 100%;
+        margin-bottom: 2.7rem;
+    }
+
+    .portafolio .galeria .proyecto img{
+        width: 100%;
+    }
+
+    .contacto .fila{
+        display: block;
+    }
+
+    .contacto .fila .col{
+        width: 80%;
+    }
+
+    .contacto .col .info{
+        position: absolute;
+        top: 40%;
+        background-color: var(--colorTerceario);
+        padding: 2rem;
+        max-width: 50rem;
+        left: 50%;
+        transform: translate(-50%, -35%);
+    }
+
+    
+}
