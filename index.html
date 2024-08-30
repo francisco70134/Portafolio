@@ -1,796 +1,879 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/normalize.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
     <title>Portafolio</title>
-    <link rel="shortcut icon" href="assetsassets/img/icoPortafolio.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link
+      rel="shortcut icon"
+      href="assetsassets/img/icoPortafolio.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="index.html"><span class="diferenciaLogo">
-                <span class="diferenciaLogo"> <Fran </span>
-                <span class="diferenciaLogo">C</span>
-                isco<span class="diferenciaLogo">/></span></a>
-            </div>
-        </header>
-
-        <!-- Creamos la barra de navegacion -->
-        <nav id="nav">
-            <ul>
-                <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
-                <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
-                <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
-                <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
-                <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
-                <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-            <i class="fa-solid fa-bars"></i>
+      <header>
+        <div class="logo">
+          <a href="index.html">
+            <Fran
+            <span class="diferenciaLogo">C</span>
+            isco<span class="diferenciaLogo">/></span></a
+          >
         </div>
-    </div>
+      </header>
 
+      <!-- Creamos la barra de navegacion -->
+      <nav id="nav">
+        <ul>
+          <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+          <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+          <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+          <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+          <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+          <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
 
     <!-- SECCION INICIOO -->
     <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-imagen">
-                <img src="assets/img/perfilnuevo.png" alt="mi perfil">
-            </div>
-            <h3>FRANCISCO <br> OLORTEGUI ABANTO</h3>
-
-            <h2>Ingeniería<abbr title=""></abbr> de Software - Análisis de datos</h2>
-            <div class="redes">
-                <a href="https://www.facebook.com/edu.olorteguiabanto" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/in/francisco-edu-olortegui-abanto/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/francisco70134/" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-            </div>
+      <div class="contenido-banner">
+        <div class="contenedor-imagen">
+          <img src="assets/img/perfilnuevo.png" alt="mi perfil" />
         </div>
+        <h3>
+          FRANCISCO <br />
+          OLORTEGUI ABANTO
+        </h3>
 
-
+        <h2>
+          Ingeniería<abbr title=""></abbr> de Software - Análisis de datos
+        </h2>
+        <div class="redes">
+          <a href="https://www.facebook.com/edu.olorteguiabanto" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/francisco-edu-olortegui-abanto/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/francisco70134/" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
     </section>
 
     <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre mi</h2>
-            <p> <span>Hola, soy francisco olortegui</span> Soy un individuo altamente motivado, con una fuerte ética de trabajo y
-                una habilidad comprobada para trabajar en equipo. Tengo una mentalidad analítica y una capacidad de resolución de problemas efectiva, lo que
-                me permite abordar los desafíos con un enfoque sistemático y eficiente. Ademas, Me considero un comunicador efectivo y un escucha activa, lo que me permite trabajar eficazmente con una amplia gama de personalidades y estilos de trabajo. Estoy emocionado de poder aplicar mis habilidades y conocimientos en un nuevo desafío y contribuir al éxito de alguna empresa que apueste en mi.</p>
+      <div class="contenido-seccion">
+        <h2>Sobre mi</h2>
+        <p>
+          <span>Hola, soy francisco olortegui</span> Soy un individuo altamente
+          motivado, con una fuerte ética de trabajo y una habilidad comprobada
+          para trabajar en equipo. Tengo una mentalidad analítica y una
+          capacidad de resolución de problemas efectiva, lo que me permite
+          abordar los desafíos con un enfoque sistemático y eficiente. Ademas,
+          Me considero un comunicador efectivo y un escucha activa, lo que me
+          permite trabajar eficazmente con una amplia gama de personalidades y
+          estilos de trabajo. Estoy emocionado de poder aplicar mis habilidades
+          y conocimientos en un nuevo desafío y contribuir al éxito de alguna
+          empresa que apueste en mi.
+        </p>
 
-            <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            13-09-2003
-                        </li>
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                13-09-2003
+              </li>
 
-                        <li>
-                            <strong>Teléfono</strong>
-                            +51 932416589
-                        </li>
+              <li>
+                <strong>Teléfono</strong>
+                +51 932416589
+              </li>
 
-                        <li>
-                            <strong>Email</strong>
-                            francisco.olortegui1@gmail.com
-                        </li>
+              <li>
+                <strong>Email</strong>
+                francisco.olortegui1@gmail.com
+              </li>
 
-                        <li>
-                            <strong>Direccion</strong>
-                            Mz h1 Lt12 - Ventanilla, Callao
-                        </li>
+              <li>
+                <strong>Direccion</strong>
+                Mz h1 Lt12 - Ventanilla, Callao
+              </li>
 
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>Freelancer</span>
-                        </li>
-                    </ul>
-                </div>
+              <li>
+                <strong>Cargo</strong>
+                <span>Freelancer</span>
+              </li>
+            </ul>
+          </div>
 
-                <!-- intereses -->
+          <!-- intereses -->
 
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
-                        </div>
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
 
-                        <div class="interes">
-                            <i class="fa-solid fa-video"></i>
-                            <span>PELICULAS</span>
-                        </div>
+              <div class="interes">
+                <i class="fa-solid fa-video"></i>
+                <span>PELICULAS</span>
+              </div>
 
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
 
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
 
-                        <div class="interes">
-                            <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
-                        </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
 
-                        <div class="interes">
-                            <i class="fa-solid fa-camera"></i>
-                            <span>FOTOGRAFIA</span>
-                        </div>
-
-                    </div>
-                </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTOGRAFIA</span>
+              </div>
             </div>
-            <!--  <button class="btn-cv">
+          </div>
+        </div>
+        <!--  <button class="btn-cv">
                 Descargar CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button> -->
 
-            <a href="https://drive.google.com/file/d/1y_Yk2d51PF9lRLpSCzzYl5w44fHk74-0/view?usp=sharing" class="btn-cv" target="_blank">
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </a>
-        </div>
+        <a
+          href="https://drive.google.com/file/d/1y_Yk2d51PF9lRLpSCzzYl5w44fHk74-0/view?usp=sharing"
+          class="btn-cv"
+          target="_blank"
+        >
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </a>
+      </div>
     </section>
 
     <!-- skills -->
 
     <!-- SECCION SKILLS -->
     <section id="skills" class="skills">
-        <div class="contenido-seccion">
-            <h2>SKILLS</h2>
-            <div class="fila">
-                <!-- Tecnicas skills -->
-                <div class="col full-width">
-                    <h3>HERRAMIENTAS Y TECNOLOGÍAS</h3>
-                    <div class="contenedor-herramientas">
-                        <!-- Fila 1: Tecnologías de Desarrollo -->
-                        <div class="herramienta">
-                            <i class="fa-brands fa-wordpress"></i>
-                            <span>WordPress</span>
-                        </div>
+      <div class="contenido-seccion">
+        <h2>SKILLS</h2>
+        <div class="fila">
+          <!-- Tecnicas skills -->
+          <div class="col full-width">
+            <h3>HERRAMIENTAS Y TECNOLOGÍAS</h3>
+            <div class="contenedor-herramientas">
+              <!-- Fila 1: Tecnologías de Desarrollo -->
+              <div class="herramienta">
+                <i class="fa-brands fa-wordpress"></i>
+                <span>WordPress</span>
+              </div>
 
-                        <div class="herramienta">
-                            <i class="fa-brands fa-html5"></i>
-                            <span>HTML</span>
-                        </div>
+              <div class="herramienta">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML</span>
+              </div>
 
-                        <div class="herramienta">
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <span>CSS</span>
-                        </div>
+              <div class="herramienta">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS</span>
+              </div>
 
-                        <div class="herramienta">
-                            <i class="fa-brands fa-js-square"></i>
-                            <span>JavaScript</span>
-                        </div>
+              <div class="herramienta">
+                <i class="fa-brands fa-js-square"></i>
+                <span>JavaScript</span>
+              </div>
 
-                        <div class="herramienta">
-                            <i class="fa-brands fa-php"></i>
-                            <span>PHP</span>
-                        </div>
+              <div class="herramienta">
+                <i class="fa-brands fa-php"></i>
+                <span>PHP</span>
+              </div>
 
-                        <div class="herramienta">
-                            <i class="fa-brands fa-laravel"></i>
-                            <span>Laravel</span>
-                        </div>
+              <div class="herramienta">
+                <i class="fa-brands fa-laravel"></i>
+                <span>Laravel</span>
+              </div>
 
-                        <!-- Fila 2: Herramientas de Análisis de Datos -->
-                        <div class="herramienta">
-                            <i class="fa-solid fa-file-excel"></i>
-                            <span>Excel</span>
-                        </div>
+              <!-- Fila 2: Herramientas de Análisis de Datos -->
+              <div class="herramienta">
+                <i class="fa-solid fa-file-excel"></i>
+                <span>Excel</span>
+              </div>
 
-                        <div class="herramienta">
-                            <i class="fa-solid fa-chart-bar"></i>
-                            <span>PowerBi</span>
-                        </div>
+              <div class="herramienta">
+                <i class="fa-solid fa-chart-bar"></i>
+                <span>PowerBi</span>
+              </div>
 
-                        <div class="herramienta">
-                            <i class="fa-solid fa-chart-pie"></i>
-                            <span>Looker</span>
-                        </div>
+              <div class="herramienta">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Looker</span>
+              </div>
 
-                        <div class="herramienta">
-                            <i class="fa-brands fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
+              <div class="herramienta">
+                <i class="fa-brands fa-git-alt"></i>
+                <span>Git</span>
+              </div>
 
-                        <div class="herramienta">
-                            <i class="fa-brands fa-github"></i>
-                            <span>GitHub</span>
-                        </div>
+              <div class="herramienta">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </div>
 
-                        <div class="herramienta">
-                            <i class="fa-solid fa-database"></i>
-                            <span>SQL/MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Profesional skills -->
-                <div class="col">
-                    <h3>SKILLS PROFESIONALES</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso full"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso full"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso full"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso full"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span>Gestión de Proyectos</span>
-                        <div class="barra-skill">
-                            <div class="progreso full"></div>
-                        </div>
-                    </div>
-                </div>
+              <div class="herramienta">
+                <i class="fa-solid fa-database"></i>
+                <span>SQL/MySQL</span>
+              </div>
             </div>
+          </div>
+
+          <!-- Profesional skills -->
+          <div class="col">
+            <h3>SKILLS PROFESIONALES</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso full"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso full"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso full"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso full"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Gestión de Proyectos</span>
+              <div class="barra-skill">
+                <div class="progreso full"></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>GRADO ESCOLAR</h4>
-                        <span class="casa">Mi amigo jesús MAJ</span>
-                        <span class="fecha">2006 - 2019</span>
-                        <p>Recuerdo con cariño mi tiempo en la escuela primaria y secundaria. Fue una época llena de descubrimientos, amistades nuevas y nuevos desafíos.
-                            Durante esos años, aprendí mucho sobre mi mismo y sobre el mundo que nos rodea. Asimismo, me di cuenta de mis fortalezas y
-                            debilidades, y trabajare arduamente para superar desafíos.
-                        </p>
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>GRADO ESCOLAR</h4>
+              <span class="casa">Mi amigo jesús MAJ</span>
+              <span class="fecha">2006 - 2019</span>
+              <p>
+                Recuerdo con cariño mi tiempo en la escuela primaria y
+                secundaria. Fue una época llena de descubrimientos, amistades
+                nuevas y nuevos desafíos. Durante esos años, aprendí mucho sobre
+                mi mismo y sobre el mundo que nos rodea. Asimismo, me di cuenta
+                de mis fortalezas y debilidades, y trabajare arduamente para
+                superar desafíos.
+              </p>
 
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-
-                    </div>
-
-                    <div class="item izq">
-                        <h4>GRADO UNIVERSITARIO</h4>
-                        <span class="casa">Universidad Tecnologica del Perú</span>
-                        <span class="fecha">2021 - En actividad</span>
-                        <p>Estoy actualmente en pleno proceso de estudios universitarios y estoy seguro de que estás estoy haciendo un excelente trabajo. Desde el primer día, he estado comprometido con mi educación y he trabajado duro para alcanzar una de mis metas. He estado explorando nuevos temas y habilidades, y he tenido la oportunidad de aplicar lo que he aprendido en proyectos y presentaciones
-                            prácticas de algunas empresas.
-                        </p>
-
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-
-                    <div class="item der">
-                        <h4>BACK-OFFICE CLARO</h4>
-                        <span class="casa">A365</span>
-                        <span class="fecha">Julio 2023 - diciembre 2023</span>
-                        <p>En mi rol en el BackOffice de Claro, gestioné y procesé solicitudes de clientes, asegurando la correcta
-                            actualización de información en los sistemas internos. Trabajé en la resolución de incidencias operativas, colaborando con diversos equipos para mantener la eficiencia
-                            y precisión en las operaciones diarias. Mi labor contribuyó a mejorar
-                            la experiencia del cliente y a optimizar los procesos internos.
-                        </p>
-
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-
-                    </div>
-
-                    <div class="item der">
-                        <h4>DESARROLLADOR WEB - WORDPRESS</h4>
-                        <span class="casa">EVANG - Leveluperu.</span>
-                        <span class="fecha">enero 2022 (SERVICIOS) - Diciem. 2022 (SERVICIOS)</span>
-                        <p>En esta empresa desempeñé un papel en el
-                            sector de la tecnología, aquí ofrecí mis servicios de soporte a la máquina de la empresa
-                            (CPU, Consultoría Técnica), desarrolle una gran cantidad de webs de todo tipo: Página de facturación
-                            , informativa, Aula virtual, Tienda online, Pasarelas de pago y otros servicios en la nube y/o problemas de servidor.
-                        </p>
-
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="item der">
-                        <h4>ANALISTA COMERCIAL</h4>
-                        <span class="casa">EVANG S.A.C.</span>
-                        <span class="fecha">enero 2024 - agosto 2024</span>
-                        <p>Como Analista de Datos Comercial, analicé datos para identificar
-                            oportunidades de negocio y optimizar estrategias comerciales. Utilicé herramientas como Excel, Power BI y Looker para crear informes
-                            y dashboards, apoyando la toma de decisiones basadas en datos y mejorando la eficiencia operativa.
-                        </p>
-
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-
-                    </div>
-                </div>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
             </div>
+
+            <div class="item izq">
+              <h4>GRADO UNIVERSITARIO</h4>
+              <span class="casa">Universidad Tecnologica del Perú</span>
+              <span class="fecha">2021 - En actividad</span>
+              <p>
+                Estoy actualmente en pleno proceso de estudios universitarios y
+                estoy seguro de que estás estoy haciendo un excelente trabajo.
+                Desde el primer día, he estado comprometido con mi educación y
+                he trabajado duro para alcanzar una de mis metas. He estado
+                explorando nuevos temas y habilidades, y he tenido la
+                oportunidad de aplicar lo que he aprendido en proyectos y
+                presentaciones prácticas de algunas empresas.
+              </p>
+
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+
+            <div class="item der">
+              <h4>BACK-OFFICE CLARO</h4>
+              <span class="casa">A365</span>
+              <span class="fecha">Julio 2023 - diciembre 2023</span>
+              <p>
+                En mi rol en el BackOffice de Claro, gestioné y procesé
+                solicitudes de clientes, asegurando la correcta actualización de
+                información en los sistemas internos. Trabajé en la resolución
+                de incidencias operativas, colaborando con diversos equipos para
+                mantener la eficiencia y precisión en las operaciones diarias.
+                Mi labor contribuyó a mejorar la experiencia del cliente y a
+                optimizar los procesos internos.
+              </p>
+
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+
+            <div class="item der">
+              <h4>DESARROLLADOR WEB - WORDPRESS</h4>
+              <span class="casa">EVANG - Leveluperu.</span>
+              <span class="fecha"
+                >enero 2022 (SERVICIOS) - Diciem. 2022 (SERVICIOS)</span
+              >
+              <p>
+                En esta empresa desempeñé un papel en el sector de la
+                tecnología, aquí ofrecí mis servicios de soporte a la máquina de
+                la empresa (CPU, Consultoría Técnica), desarrolle una gran
+                cantidad de webs de todo tipo: Página de facturación ,
+                informativa, Aula virtual, Tienda online, Pasarelas de pago y
+                otros servicios en la nube y/o problemas de servidor.
+              </p>
+
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+
+            <div class="item der">
+              <h4>ANALISTA COMERCIAL</h4>
+              <span class="casa">EVANG S.A.C.</span>
+              <span class="fecha">enero 2024 - agosto 2024</span>
+              <p>
+                Como Analista de Datos Comercial, analicé datos para identificar
+                oportunidades de negocio y optimizar estrategias comerciales.
+                Utilicé herramientas como Excel, Power BI y Looker para crear
+                informes y dashboards, apoyando la toma de decisiones basadas en
+                datos y mejorando la eficiencia operativa.
+              </p>
+
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- SECCION PORTAFOLIO -->
     <section id="portafolio" class="portafolio">
-        <div class="contenido-seccion">
-            <h2>PORTAFOLIO</h2>
-            <div class="galeria">
-
-                <div class="proyecto">
-                    <img src="assets/img/p1.png" alt="proyecto1">
-                    <div class="overlay">
-                        <a href="https://arawaza.pe/" target="_blank">
-                            <h3>ARAWAZA PERU</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-
-                <div class="proyecto">
-                    <img src="assets/img/jundowebbb.png" alt="proyecto1">
-                    <div class="overlay">
-                        <a href="https://jundo.pe/" target="_blank">
-                            <h3>Jundo</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-
-                <div class="proyecto">
-                    <img src="assets/img/bkcweb.png" alt="proyecto1">
-                    <div class="overlay">
-                        <a href="https://bkc.org.pe/" target="_blank">
-                            <h3>BKC PERU</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-
-                <div class="proyecto">
-                    <img src="assets/img/evang.jpg" alt="proyecto1">
-                    <div class="overlay">
-                        <a href="https://evangcorp.com/ventas-y-outsourcing/" target="_blank">
-                            <h3>EVANG SAC</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/tiendaarlin.png" alt="proyecto1">
-                    <div class="overlay">
-                        <a href="https://tienda.arlintextil.com/" target="_blank">
-                            <h3>TIENDA ARLIN</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <!-- legbar -->
-                <div class="proyecto">
-                    <img src="assets/img/legbar.jpg" alt="proyecto1">
-                    <div class="overlay">
-                        <a href="https://estudiolegbar.com/" target="_blank">
-                            <h3>Legbar</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <!-- Acuerdos de paz -->
-                <div class="proyecto">
-                    <img src="assets/img/acuerdos.jpg" alt="proyecto1">
-                    <div class="overlay">
-                        <a href="https://acuerdosdepaz.com/" target="_blank">
-                            <h3>Acuerdos de paz</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <!-- Orocash -->
-                <div class="proyecto">
-                    <img src="assets/img/orocash.jpg" alt="proyecto1">
-                    <div class="overlay">
-                        <a href="https://orocash.pe/" target="_blank">
-                            <h3>Orocash</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <!-- PuntoClave -->
-                <div class="proyecto">
-                    <img src="assets/img/puntoclave.jpg" alt="proyecto1">
-                    <div class="overlay">
-                        <a href="https://www.puntoclave.pe/" target="_blank">
-                            <h3>Punto clave</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <!-- MasterHome -->
-                <div class="proyecto">
-                    <img src="assets/img/masterhome.jpg" alt="proyecto1">
-                    <div class="overlay">
-                        <a href="https://masterhome.pe/" target="_blank">
-                            <h3>MasterHome</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-
-
-                <div class="proyecto">
-                    <img src="assets/img/p2.png" alt="proyecto2">
-                    <div class="overlay">
-                        <a href="https://dquiap.pe/" target="_blank">
-                            <h3>DQUIAP</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p3.png" alt="proyecto3">
-                    <div class="overlay">
-                        <a href="https://centrodiagnosticoversalles.com.pe/" target="_blank">
-                            <h3>VERSALLES</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p4.png" alt="proyecto4">
-                    <div class="overlay">
-                        <a href="https://diemsac.pe/" target="_blank">
-                            <h3>DIEMSAC</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p5.png" alt="proyecto5">
-                    <div class="overlay">
-                        <a href="https://araceliconfiteria.com/" target="_blank">
-                            <h3>ARACELI CONFITERIA</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p6.png" alt="proyecto6">
-                    <div class="overlay">
-                        <a href="https://oss.pe/" target="_blank">
-                            <h3>OSS PE</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p7.png" alt="proyecto7">
-                    <div class="overlay">
-                        <a href="https://atila.com.pe/" target="_blank">
-                            <h3>ATILA</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p8.png" alt="proyecto8">
-                    <div class="overlay">
-                        <a href="https://tienda.arlintextil.com/" target="_blank">
-                            <h3>ARLIN TEXTIL</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/andyBea.jpeg" alt="proyecto24">
-                    <div class="overlay">
-                        <a href="https://andybeamelamina.com/" target="_blank">
-                            <h3>ANDY Y BEA</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p12.png" alt="proyecto12">
-                    <div class="overlay">
-                        <a href="https://jc-innova.com/" target="_blank">
-                            <h3>JC INNOVA</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p13.png" alt="proyecto13">
-                    <div class="overlay">
-                        <a href="https://pacificodelsur.com/" target="_blank">
-                            <h3>PACIFICO DEL SUR</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p14.png" alt="proyecto14">
-                    <div class="overlay">
-                        <a href="https://fravia.com.pe/" target="_blank">
-                            <h3>FRAVIA</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p15.png" alt="proyecto15">
-                    <div class="overlay">
-                        <a href="https://agropiscoperu.com.pe/" target="_blank">
-                            <h3>AGROPISCO</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p16.png" alt="proyecto16">
-                    <div class="overlay">
-                        <a href="https://ferreteriayserviciosasencio.com/" target="_blank">
-                            <h3>FERRETERIA ASENCIO</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p17.png" alt="proyecto17">
-                    <div class="overlay">
-                        <a href="https://lalochoque.com/" target="_blank">
-                            <h3>LALO CHOQUE</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p18.png" alt="proyecto18">
-                    <div class="overlay">
-                        <a href="https://repisaspack3d.com/" target="_blank">
-                            <h3>REPISAS PACK 3D</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p19.png" alt="proyecto19">
-                    <div class="overlay">
-                        <a href="https://rackparatv.com/" target="_blank">
-                            <h3>RACK PARA TV</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p20.png" alt="proyecto20">
-                    <div class="overlay">
-                        <a href="https://www.kalirack.com/" target="_blank">
-                            <h3>KALIRACK</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p25.png" alt="proyecto25">
-                    <div class="overlay">
-                        <a href="https://oceansfreeacuarios.com/" target="_blank">
-                            <h3>OCEANS FREE ACUARIOS</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p22.png" alt="proyecto22">
-                    <div class="overlay">
-                        <a href="https://kfrstoreperu.com/" target="_blank">
-                            <h3>KFR STORE</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p9.png" alt="proyecto9">
-                    <div class="overlay">
-                        <a href="https://todobaratoimport.com/" target="_blank">
-                            <h3>TODO BARATO IMPORT</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="assets/img/p10.png" alt="proyecto10">
-                    <div class="overlay">
-                        <a href="https://mrcorporationtrading.com/" target="_blank">
-                            <h3>MRCORPORATION</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-                <!-- CONTINUANDO CON PORTAFOLIO -->
-
-                <div class="proyecto">
-                    <img src="assets/img/p11.png" alt="proyecto11">
-                    <div class="overlay">
-                        <a href="https://www.dtodoprecio.com/" target="_blank">
-                            <h3>DTODOPRECIO</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
-
-
-                <div class="proyecto">
-                    <img src="assets/img/p23.png" alt="proyecto23">
-                    <div class="overlay">
-                        <a href="https://dolcezza.com.pe/" target="_blank">
-                            <h3>DOLCEZZA</h3>
-                        </a>
-                        <p>Francisco Olortegui</p>
-                    </div>
-                </div>
-
+      <div class="contenido-seccion">
+        <h2>PORTAFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="assets/img/p1.png" alt="proyecto1" />
+            <div class="overlay">
+              <a href="https://arawaza.pe/" target="_blank">
+                <h3>ARAWAZA PERU</h3>
+              </a>
+              <p>Francisco Olortegui</p>
             </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/jundowebbb.png" alt="proyecto1" />
+            <div class="overlay">
+              <a href="https://jundo.pe/" target="_blank">
+                <h3>Jundo</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/bkcweb.png" alt="proyecto1" />
+            <div class="overlay">
+              <a href="https://bkc.org.pe/" target="_blank">
+                <h3>BKC PERU</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/evang.jpg" alt="proyecto1" />
+            <div class="overlay">
+              <a
+                href="https://evangcorp.com/ventas-y-outsourcing/"
+                target="_blank"
+              >
+                <h3>EVANG SAC</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/tiendaarlin.png" alt="proyecto1" />
+            <div class="overlay">
+              <a href="https://tienda.arlintextil.com/" target="_blank">
+                <h3>TIENDA ARLIN</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <!-- legbar -->
+          <div class="proyecto">
+            <img src="assets/img/legbar.jpg" alt="proyecto1" />
+            <div class="overlay">
+              <a href="https://estudiolegbar.com/" target="_blank">
+                <h3>Legbar</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <!-- Acuerdos de paz -->
+          <div class="proyecto">
+            <img src="assets/img/acuerdos.jpg" alt="proyecto1" />
+            <div class="overlay">
+              <a href="https://acuerdosdepaz.com/" target="_blank">
+                <h3>Acuerdos de paz</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <!-- Orocash -->
+          <div class="proyecto">
+            <img src="assets/img/orocash.jpg" alt="proyecto1" />
+            <div class="overlay">
+              <a href="https://orocash.pe/" target="_blank">
+                <h3>Orocash</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <!-- PuntoClave -->
+          <div class="proyecto">
+            <img src="assets/img/puntoclave.jpg" alt="proyecto1" />
+            <div class="overlay">
+              <a href="https://www.puntoclave.pe/" target="_blank">
+                <h3>Punto clave</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <!-- MasterHome -->
+          <div class="proyecto">
+            <img src="assets/img/masterhome.jpg" alt="proyecto1" />
+            <div class="overlay">
+              <a href="https://masterhome.pe/" target="_blank">
+                <h3>MasterHome</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p2.png" alt="proyecto2" />
+            <div class="overlay">
+              <a href="https://dquiap.pe/" target="_blank">
+                <h3>DQUIAP</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p3.png" alt="proyecto3" />
+            <div class="overlay">
+              <a
+                href="https://centrodiagnosticoversalles.com.pe/"
+                target="_blank"
+              >
+                <h3>VERSALLES</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p4.png" alt="proyecto4" />
+            <div class="overlay">
+              <a href="https://diemsac.pe/" target="_blank">
+                <h3>DIEMSAC</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p5.png" alt="proyecto5" />
+            <div class="overlay">
+              <a href="https://araceliconfiteria.com/" target="_blank">
+                <h3>ARACELI CONFITERIA</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p6.png" alt="proyecto6" />
+            <div class="overlay">
+              <a href="https://oss.pe/" target="_blank">
+                <h3>OSS PE</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p7.png" alt="proyecto7" />
+            <div class="overlay">
+              <a href="https://atila.com.pe/" target="_blank">
+                <h3>ATILA</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p8.png" alt="proyecto8" />
+            <div class="overlay">
+              <a href="https://tienda.arlintextil.com/" target="_blank">
+                <h3>ARLIN TEXTIL</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/andyBea.jpeg" alt="proyecto24" />
+            <div class="overlay">
+              <a href="https://andybeamelamina.com/" target="_blank">
+                <h3>ANDY Y BEA</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p12.png" alt="proyecto12" />
+            <div class="overlay">
+              <a href="https://jc-innova.com/" target="_blank">
+                <h3>JC INNOVA</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p13.png" alt="proyecto13" />
+            <div class="overlay">
+              <a href="https://pacificodelsur.com/" target="_blank">
+                <h3>PACIFICO DEL SUR</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p14.png" alt="proyecto14" />
+            <div class="overlay">
+              <a href="https://fravia.com.pe/" target="_blank">
+                <h3>FRAVIA</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p15.png" alt="proyecto15" />
+            <div class="overlay">
+              <a href="https://agropiscoperu.com.pe/" target="_blank">
+                <h3>AGROPISCO</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p16.png" alt="proyecto16" />
+            <div class="overlay">
+              <a
+                href="https://ferreteriayserviciosasencio.com/"
+                target="_blank"
+              >
+                <h3>FERRETERIA ASENCIO</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p17.png" alt="proyecto17" />
+            <div class="overlay">
+              <a href="https://lalochoque.com/" target="_blank">
+                <h3>LALO CHOQUE</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p18.png" alt="proyecto18" />
+            <div class="overlay">
+              <a href="https://repisaspack3d.com/" target="_blank">
+                <h3>REPISAS PACK 3D</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p19.png" alt="proyecto19" />
+            <div class="overlay">
+              <a href="https://rackparatv.com/" target="_blank">
+                <h3>RACK PARA TV</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p20.png" alt="proyecto20" />
+            <div class="overlay">
+              <a href="https://www.kalirack.com/" target="_blank">
+                <h3>KALIRACK</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p25.png" alt="proyecto25" />
+            <div class="overlay">
+              <a href="https://oceansfreeacuarios.com/" target="_blank">
+                <h3>OCEANS FREE ACUARIOS</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p22.png" alt="proyecto22" />
+            <div class="overlay">
+              <a href="https://kfrstoreperu.com/" target="_blank">
+                <h3>KFR STORE</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p9.png" alt="proyecto9" />
+            <div class="overlay">
+              <a href="https://todobaratoimport.com/" target="_blank">
+                <h3>TODO BARATO IMPORT</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p10.png" alt="proyecto10" />
+            <div class="overlay">
+              <a href="https://mrcorporationtrading.com/" target="_blank">
+                <h3>MRCORPORATION</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <!-- CONTINUANDO CON PORTAFOLIO -->
+
+          <div class="proyecto">
+            <img src="assets/img/p11.png" alt="proyecto11" />
+            <div class="overlay">
+              <a href="https://www.dtodoprecio.com/" target="_blank">
+                <h3>DTODOPRECIO</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="assets/img/p23.png" alt="proyecto23" />
+            <div class="overlay">
+              <a href="https://dolcezza.com.pe/" target="_blank">
+                <h3>DOLCEZZA</h3>
+              </a>
+              <p>Francisco Olortegui</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- SECCION CONTACTO -->
 
     <div class="section contacto" id="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- FORMULARIO -->
-                <div class="col">
-                    <form action="https://formsubmit.co/francisco.olortegui1@gmail.com" class="form" method="POST">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- FORMULARIO -->
+          <div class="col">
+            <form
+              action="https://formsubmit.co/francisco.olortegui1@gmail.com"
+              class="form"
+              method="POST"
+            >
+              <input
+                type="text"
+                name="name"
+                id=""
+                placeholder="Tú Nombre"
+                required
+              />
 
-                        <input type="text" name="name" id="" placeholder="Tú Nombre" required>
+              <input
+                type="tel"
+                name="tel"
+                id=""
+                placeholder="Número telefónico"
+                required
+              />
 
-                        <input type="tel" name="tel" id="" placeholder="Número telefónico" required>
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="Direccion de correo"
+                required
+              />
 
-                        <input type="email" name="email" id="" placeholder="Direccion de correo" required>
+              <input type="text" name="" id="" placeholder="Asunto" required />
 
-                        <input type="text" name="" id="" placeholder="Asunto" required>
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+                required
+              ></textarea>
+              <button type="submit">
+                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
 
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                        <button type="submit">
-                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
+          </div>
 
-                            <span class="overlay"></span>
-                        </button>
+          <!-- REDES Y CONTACTO -->
+          <div class="col">
+            <img src="assets/img/imagen-contacto.avif" alt="contacto" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Lima, Puente Piedra 15122
+                </li>
 
-                    </form>
-                </div>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llamame: +51 941795983
+                </li>
 
-                <!-- REDES Y CONTACTO -->
-                <div class="col">
-                    <img src="assets/img/imagen-contacto.avif" alt="contacto">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Lima, Puente Piedra 15122
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamame: +51 941795983
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: francisco.olortegui1@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: francisco.olortegui1@gmail.com
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-
 
     <!-- FOOTER -->
 
     <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
 
-        <div class="redes">
-            <a href="https://www.facebook.com/edu.olorteguiabanto" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://twitter.com/Ed22804126" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.instagram.com/fran_duhcj/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://github.com/francisco70134" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/francisco-edu-olortegui-abanto/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-
-
+      <div class="redes">
+        <a href="https://www.facebook.com/edu.olorteguiabanto" target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com/Ed22804126" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/fran_duhcj/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://github.com/francisco70134" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/francisco-edu-olortegui-abanto/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+      </div>
     </footer>
-
 
     <!-- llamamos al script -->
     <script src="assets/js/scripts.js"></script>
-    <script src="//code.tidio.co/akxanzlaj55xozxojjo6mxdegdb8xzjp.js" async></script>
-</body>
-
+    <script
+      src="//code.tidio.co/akxanzlaj55xozxojjo6mxdegdb8xzjp.js"
+      async
+    ></script>
+  </body>
 </html>
