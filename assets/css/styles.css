@@ -123,6 +123,45 @@ img {
     display: none;
 }
 
+@media screen and (max-width: 760px) {
+    .contenedor-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: var(--colorTerceario);
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+        padding-left: 0;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid var(--colorBlanco);
+        padding: 1rem 0;
+        width: 100%; /* Para que ocupe todo el ancho */
+    }
+
+    nav.responsive ul li a {
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+}
+
+
 /*seccion inicioo*/
 
 .inicio{
