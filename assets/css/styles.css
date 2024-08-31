@@ -125,8 +125,8 @@ img {
 
 @media screen and (max-width: 760px) {
     .contenedor-header {
-        flex-direction: column;
-        align-items: flex-start;
+       
+        align-items: center;
         padding: 10px;
     }
 
@@ -245,6 +245,7 @@ img {
     line-height: 2.2rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
+    text-align: justify;
 }
 
 .sobremi .contenido-seccion p span{
