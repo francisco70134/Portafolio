@@ -405,6 +405,19 @@ img {
     justify-content: center;
 }
 
+@media screen and (max-width: 760px) {
+    .contenedor-herramientas {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contenedor-herramientas {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas muy pequeñas */
+    }
+}
+
+
 .herramienta {
     width: 10rem;
     height: 10rem;
